@@ -811,11 +811,6 @@ video {
   border-color: rgb(203 213 225 / var(--tw-border-opacity));
 }
 
-.border-slate-800 {
-  --tw-border-opacity: 1;
-  border-color: rgb(30 41 59 / var(--tw-border-opacity));
-}
-
 .border-slate-700 {
   --tw-border-opacity: 1;
   border-color: rgb(51 65 85 / var(--tw-border-opacity));
@@ -931,10 +926,6 @@ video {
 
 .pb-16 {
   padding-bottom: 4rem;
-}
-
-.pt-32 {
-  padding-top: 8rem;
 }
 
 .pt-24 {
@@ -1218,11 +1209,6 @@ video {
 
   .md\:pt-\[3\.8rem\] {
     padding-top: 3.8rem;
-  }
-
-  .md\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
   }
 
   .md\:text-lg {
