@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -26,22 +26,34 @@
             <nav id="nav-menu" class="absolute right-0 top-full hidden w-full max-w-[200px] rounded-lg bg-white py-5 shadow-lg lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none">
               <ul class="block lg:flex">
                 <li class="group">
-                  <a href="#home" class="mx-8 flex py-2 text-base text-secondary group-hover:text-primary">Beranda</a>
+                  <a href="#home" class="mx-8 flex py-2 text-base text-secondary group-hover:text-primary dark:text-white">Beranda</a>
                 </li>
                 <li class="group">
-                  <a href="#about" class="mx-8 flex py-2 text-base text-secondary group-hover:text-primary">Tentang Saya</a>
+                  <a href="#about" class="mx-8 flex py-2 text-base text-secondary group-hover:text-primary dark:text-white">Tentang Saya</a>
                 </li>
                 <li class="group">
-                  <a href="#porfolio" class="mx-8 flex py-2 text-base text-secondary group-hover:text-primary">Porfolio</a>
+                  <a href="#porfolio" class="mx-8 flex py-2 text-base text-secondary group-hover:text-primary dark:text-white">Porfolio</a>
                 </li>
                 <li class="group">
-                  <a href="#clients" class="mx-8 flex py-2 text-base text-secondary group-hover:text-primary">Clients</a>
+                  <a href="#clients" class="mx-8 flex py-2 text-base text-secondary group-hover:text-primary dark:text-white">Clients</a>
                 </li>
                 <li class="group">
-                  <a href="#contact" class="mx-8 flex py-2 text-base text-secondary group-hover:text-primary">Kontak</a>
+                  <a href="#contact" class="mx-8 flex py-2 text-base text-secondary group-hover:text-primary dark:text-white">Kontak</a>
                 </li>
                 <li class="group">
-                  <a href="#blog" class="mx-8 flex py-2 text-base text-secondary group-hover:text-primary">Blog</a>
+                  <a href="#blog" class="mx-8 flex py-2 text-base text-secondary group-hover:text-primary dark:text-white">Blog</a>
+                </li>
+                <li class="flex items-center pl-8">
+                  <div class="flex rounded-full bg-primary px-3 py-3">
+                    <span class="mr-2 text-sm font-semibold text-white">Light</span>
+                    <input type="checkbox" class="hidden" id="dark-toggle" />
+                    <label for="dark-toggle">
+                      <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                        <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"></div>
+                      </div>
+                    </label>
+                    <span class="ml-2 text-sm font-semibold text-white">Dark</span>
+                  </div>
                 </li>
               </ul>
             </nav>
@@ -52,14 +64,14 @@
     <!--Header End-->
 
     <!-- Hero Section Start -->
-    <section id="home" class="pt-36 xl:mb-6 xl:h-[85vh]">
+    <section id="home" class="pt-36 dark:bg-dark xl:mb-6 xl:h-[85vh]">
       <div class="container">
         <!--buat kontainer umtuk pembungkus biar responsive -->
         <div class="flex flex-wrap">
           <!--Biar kotak flex sebagai pembungkus objek fleksibel-->
           <div class="w-full self-center px-4 lg:mt-16 lg:w-1/2">
             <!--membuat lebar full dan buatposisinya sendiri di tengah dan jarak dalam horiz 4-->
-            <h1 class="md focus:outline-primary:text-xl text-base font-semibold text-primary">Halo Semua, Saya<span class="mt-1 block text-4xl font-bold text-dark lg:text-5xl">Irsan Jamaludin</span></h1>
+            <h1 class="md focus:outline-primary:text-xl text-base font-semibold text-primary">Halo Semua, Saya<span class="mt-1 block text-4xl font-bold text-dark dark:text-white lg:text-5xl">Irsan Jamaludin</span></h1>
             <h2 class="mb-5 text-lg font-medium text-secondary lg:text-2xl">Programmer & <span class="text-dark">Problem Solving</span></h2>
             <p class="mb-10 font-medium leading-relaxed text-secondary">Belajar programming itu mudah bukan, pastinya <span class="font-bold text-dark">dong hehe..</span></p>
             <a href="#" class="rounded-full bg-primary py-3 px-4 text-base font-semibold text-white transition duration-200 ease-in-out hover:opacity-80 hover:shadow-lg">Hubungi Saya</a>
@@ -79,7 +91,7 @@
     <!-- Hero Section End -->
 
     <!-- About Section Start -->
-    <section id="about" class="pt-36 pb-32">
+    <section id="about" class="pt-36 pb-32 dark:bg-dark">
       <!-- Wadah section about-->
       <div class="container lg:rounded-xl lg:bg-slate-300 xl:rounded-none xl:bg-none">
         <!--Wadah dari beberapa product-->
@@ -401,6 +413,12 @@
       </div>
     </footer>
     <!-- Footer End -->
+
+    <!-- Back to top Start -->
+    <a href="#home" id="totop" class="fixed bottom-4 right-3 z-[9999] hidden h-9 w-10 items-center justify-center rounded-full bg-primary p-4 hover:animate-pulse lg:right-4 lg:h-14 lg:w-14">
+      <span class="mt-2 block h-2 w-2 rotate-45 border-t-2 border-l-2 md:h-5 md:w-5"></span>
+    </a>
+    <!-- Back to top End -->
 
     <script src="/src/main/js/script.js"></script>
   </body>
