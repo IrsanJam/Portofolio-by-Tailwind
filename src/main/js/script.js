@@ -1,4 +1,4 @@
-//Peintah ketika di scroll munculkan kelas / hapus class navbar-fixed
+//Perintah ketika di scroll munculkan kelas / hapus class navbar-fixed
 window.onscroll = function () {
   const head = document.querySelector("header");
   const patokan = head.offsetTop;
